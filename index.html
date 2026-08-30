@@ -2,10 +2,17 @@
 <html>
   <head>
    <link rel="stylesheet" href="ma-timeline.css"> 
+    <link title="timesline-tyles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  
   </head>
   <body>
-    <h1>Ma timeline</h1>
-    <p>Ceci est ma première timeline</p>
-    
+    <div id="timeline-embed"></div>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script>
+    var timeline = new TL.Timeline(
+    'timeline-embed',
+      'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ80sZ2jPD5jNsHyibE_wNJ42_L-p7LXy-RBvlOJMP2YSmd0NAAyZYc6Pg8HkYXSF-CHUIshTv6OfxH/pubhtml'
+      );
+    </script>
   </body>
 </html>
